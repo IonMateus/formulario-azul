@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    
+<div id="formulario">
+
+    <form onsubmit="cadastro()">
+        <label>Nome :</label>
+        <input minlength="3" maxlength="40" class="input" type="text" required><br><br>
+        <label>E-Mail :</label>
+        <input pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" class="input" type="email" required><br><br>
+        <label>Senha :</label>
+        <input class="input" type="password" required><br><br>
+        <input id="btn" type="submit" value="Enviar">
+        <input id="btn" type="reset" value="Limpar">
+    </form>
+
+</div>
+
+
+</body>
+</html>

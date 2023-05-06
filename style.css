@@ -1,0 +1,101 @@
+
+*{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #0e4364, #16364e, #122d42, #16364e, #0e4364);
+    animation: back 50s infinite ease;
+}
+
+@keyframes back {
+    0%{
+      background-position-x: 0px;
+    }
+    50%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+#formulario{
+    width: 70%;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label{
+    font-size: 40px;
+}
+
+.input{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px ;
+    
+}
+
+.input:valid{
+    background-image: linear-gradient(to right, #186596, #163046);
+}
+
+.input:hover{
+    background-color: rgb(114, 114, 114);
+}
+
+.input:focus{
+    background-color: #56C5CC;
+}
+
+.input:invalid{
+    background-color: #ffffff;
+    border: 2px solid #f3622d;
+}
+
+#btn{
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 200px 30px;
+    background-image: linear-gradient(to right, #186596, #163046);
+}
+
+#btn:hover{
+    animation: btnHover 2s infinite;
+}
+
+#btn:active{
+    animation: btnActive 1s ease-in;
+}
+
+@keyframes btnActive {
+    to{
+        scale: 1;
+    }
+    from{
+        scale: 0.8;
+    }
+}
+
+@keyframes btnHover {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 0.95;
+    }
+    100%{
+        scale: 1;
+    }
+}
